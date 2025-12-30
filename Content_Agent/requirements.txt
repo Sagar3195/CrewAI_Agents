@@ -1,0 +1,6 @@
+crewai
+crewai[tools]
+crewai[google-genai]
+exa_py
+ipywidgets
+python-dotenv
