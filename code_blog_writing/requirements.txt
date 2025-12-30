@@ -1,0 +1,6 @@
+crewai
+crewai[tools]
+crewai[google-genai]
+python-dotenv
+langchain 
+langchian_community

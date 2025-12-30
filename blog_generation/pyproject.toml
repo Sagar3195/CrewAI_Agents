@@ -1,0 +1,25 @@
+[project]
+name = "blog_generation"
+version = "0.1.0"
+description = "blog_generation using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[google-genai,tools]==1.7.0",
+    "python-dotenv>=1.1.1",
+]
+
+[project.scripts]
+blog_generation = "blog_generation.main:run"
+run_crew = "blog_generation.main:run"
+train = "blog_generation.main:train"
+replay = "blog_generation.main:replay"
+test = "blog_generation.main:test"
+run_with_trigger = "blog_generation.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
